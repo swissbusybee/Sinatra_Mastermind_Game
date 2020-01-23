@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Mastermind Reloaded Game</title>
+
+  </head>
+  <body>
+
+    <div class="intro">
+    <h1>Mastermind Reloaded Game</h1>
+    <h3>Instructions:</h3>
+      <p>Try to guess the secret number. Input a number between 1 to 100.</p>
+      <p>Give me your best shot!</p>
+    </div>
+
+    <div class="response-spacer__div">
+      <p class="response__paragraph <%= color_response %>">
+        <%= message %>
+      </p>
+    </div>
+
+    <form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+
+    <p class="guesses-left__paragraph paragraph--inline-block">Guesses Remaining: <%= GUESSES_REMAINING %></p>
+          <!-- <p><%= "The ANSWER is #{NUMBER}" %></p> -->
+
+    <p class="reset-message__paragraph"><%= game_response %></p>
+
+<br>
+<br>
+<br>
+
+    <footer>
+        <p>Created for the Odin Project</p>
+        <a href="https://github.com/swissbusybee">Github | </a>
+        <a href="http://www.theodinproject.com/courses/ruby-onrails/lessons/sinatra-basics">The Odin Project | </a>
+        <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Markus Spiske on Unsplash |</a>
+      </footer>
+
+  </body>
+
+</html>

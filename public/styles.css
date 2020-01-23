@@ -1,0 +1,30 @@
+/* ---------- GLOBAL ---------- */
+body {
+  background-image: url("./background_image.jpg");
+  background-size: cover;
+  background-position:50% 50%;
+  font-family: "Lobster", monospace, sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.response__paragraph--correct {
+  background-color: green;
+}
+
+.response__paragraph--near {
+  background-color: yellow
+}
+
+.response__paragraph--far {
+  background-color: red;
+
+
+
+
+
+
+
+}
